@@ -6,7 +6,9 @@ class CountersController < ApplicationController
 	end
 
 	def show
+		@ip = request.remote_ip
 		@counter=Counter.find_by(name: params[:id])
+		@individaul_hit=IndividualHit.create(ip: @ip, counter: @counter)
 
 		respond_to do |format|
 			format.html 
