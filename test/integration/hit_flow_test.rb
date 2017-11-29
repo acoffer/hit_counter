@@ -28,7 +28,7 @@ class HitFlowTest < ActionDispatch::IntegrationTest
     get '/counters/somewhere'
     assert_select "h3", "Counter ID: 2"
     assert_select "tr", 2
-    assert_select "td", 5
+    assert_select "td", 6
   end
 
   test "check that local/individual_hits shows the correctly before & after getting root 3 times" do
