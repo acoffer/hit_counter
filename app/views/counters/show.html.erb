@@ -1,0 +1,22 @@
+<h3>Counter ID: <%= @counter.id %></h3>
+
+<table border="1px solid">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Count</th>
+			<th>Created</th>
+			<th>Updated</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				<td><%= @counter.id %></td>
+				<td><%= @counter.name %></td>
+				<td><%= @counter.count %></td>
+				<td><%= @counter.created_at %></td>
+				<td><%= @counter.updated_at %></td>
+			</tr>
+	</tbody>
+</table>

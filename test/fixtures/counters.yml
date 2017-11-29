@@ -1,0 +1,12 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+entry1: 
+  id: 74
+  name: local
+
+entry2:
+  id: 2
+  name: somewhere
+
+entry3:
+  id: 3
+  name: there

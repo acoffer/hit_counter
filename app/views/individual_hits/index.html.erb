@@ -1,0 +1,24 @@
+<h3>All Individual hits objects: </h3>
+
+<table border="1px solid">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>IP</th>
+			<th>Foreign Key </th>
+			<th>Created</th>
+			<th>Updated</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @individual_hits.each do |individual_hit| %>
+			<tr>
+				<td><%= individual_hit.id %></td>
+				<td><%= individual_hit.ip %></td>
+				<td><%= individual_hit.counter_id %></td>
+				<td><%= individual_hit.created_at %></td>
+				<td><%= individual_hit.updated_at %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
