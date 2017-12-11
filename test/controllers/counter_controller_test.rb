@@ -10,4 +10,8 @@ class CountersControllerTest < ActionDispatch::IntegrationTest
     	@new_display_local_hits=@local_counter.individual_hits.count
     	assert_equal(@new_display_local_hits, 4)
 	end
+
+	# test "make sure individual hit is always added then displayed instead of the other way around" do
+	# 	assert
+	# end
 end
