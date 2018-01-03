@@ -8,6 +8,7 @@ class CountersController < ApplicationController
 	def show
 		@ip = request.remote_ip
 		@counter=Counter.find_by(name: params[:id])
+		puts @counter.count
 		@individual_hit=@counter.individual_hits.create(ip: @ip)
 			if IndividualHit.exists?(@individual_hit.id)
 				render :action => "show"

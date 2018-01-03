@@ -21,3 +21,6 @@
 /yarn-error.log
 
 .byebug_history
+
+#Ignore local enviroment yml file
+/config/environment_variables.yml

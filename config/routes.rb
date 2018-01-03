@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 	root 'welcome#front'
 
+	resources :contacts, :only => [:new, :create]
+	
 	resources :counters, :only => [:index, :show] do
 		
 		member do

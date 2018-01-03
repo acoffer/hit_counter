@@ -1,0 +1,17 @@
+contact1: 
+  ip: 1.1.1.1
+  name: Andy
+  email: Andy@yahoo.com
+  content: This is the content from the 1st contact
+
+contact2: 
+  ip: 2.2.2.2
+  name: Ben
+  email: Ben@gmail.com
+  content: This is the cotent from the 2nd contact
+
+contact3: 
+  ip: 3.3.3.3
+  name: Clark
+  email: Clark@juno.com
+  content: This is the content from the 3rd contact
