@@ -24,3 +24,10 @@
 
 #Ignore local enviroment yml file
 /config/environment_variables.yml
+
+#Ignore Configuration entrys
+/db/migrate/20180103215937_add_entry_to_configurations.rb
+
+#Ignore configuration secrets file
+/config/secrets.yml
+
