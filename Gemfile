@@ -41,7 +41,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
-  gem 'email_spec'
+  # gem 'email_spec'
 end
 
 group :development do
@@ -57,3 +57,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "rspec-rails", :group => [:development, :test]
 gem "rspec-rails", :group => [:development, :test]
+
+gem 'recaptcha', require: 'recaptcha/rails'

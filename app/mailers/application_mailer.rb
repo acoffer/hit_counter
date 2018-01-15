@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: Contact.last.email
+  default from: "hit counter contact page"
   layout 'mailer'
 end

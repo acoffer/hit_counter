@@ -31,3 +31,5 @@
 #Ignore configuration secrets file
 /config/secrets.yml
 
+#ignore migrates
+/db/migrate/*

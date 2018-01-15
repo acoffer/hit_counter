@@ -5,7 +5,8 @@ RSpec.describe ContactsController, type: :controller do
     {
      name: "Tom",
      email: "tom@stu",
-     content: "some message" 
+     content: "some message"
+
     }
   }
 
@@ -31,10 +32,6 @@ RSpec.describe ContactsController, type: :controller do
           post :create, params: {contact: valid_attributes}
         }.to change(Contact, :count).by(1)
       end
-      it "it sends an email" do
-        expect { subject.send_instruction
-          }.to change({ActionMailer::Base.deliveries.count}).by(1)
-      end
       it "redirects to the home page (/)" do
         post :create, params: {contact: valid_attributes}
         expect(response).to redirect_to("/")
@@ -46,10 +43,6 @@ RSpec.describe ContactsController, type: :controller do
         expect{
           post :create, params: {contact: invalid_attributes}
         }.to_not change(Contact, :count)
-      end
-      it "does not send an email" do
-        expect{subject.send_instruction
-          }.to_not change({ActionMailer::Base.deliveries.count})
       end
       it "re-renders the contacts/new" do
         post :create, params: {contact: invalid_attributes}

@@ -27,7 +27,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     @contact.ip=request.remote_ip
  
-    if @contact.save
+    if @contact.save 
       ContactMailer.contact_email(@contact).deliver_now
       redirect_to "/"
     else
